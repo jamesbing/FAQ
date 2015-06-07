@@ -1,0 +1,8 @@
+@CHARSET "utf-8";
+
+.titleOver{
+background-image:url(../images/bgMainNav03.gif);
+background-repeat:repeat-x;
+background-position:top;
+color:#FFD800 !important;
+}

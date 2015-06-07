@@ -1,0 +1,527 @@
+html,body {
+	margin: 0px;
+	height: 100%;
+	padding: 0px;
+	background-color: #fff;
+	background-image: url(../images/bgMainbk01.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	text-align: center;
+	font-family: Verdana, 宋体;
+}
+
+#topNav {
+	width: 980px;
+	height: 74px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #1575BD;
+	background-image: url(../../img/comm/bgMainTop.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	overflow: hidden;
+}
+
+#mainNavBox {
+	width: 970px;
+	width: 980px !important;
+	height: 71px; //
+	background-color: #1575BD;
+	background-color: #D8D8D8;
+	border: 0px solid #00f;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: repeat-x;
+	background-image: url(../images/myNavabg.gif);
+}
+
+#mainContentPos {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #D8D8D8;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+#mainContentPos:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#mainContent {
+	width: 970px;
+	background-color: #fff;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mainContent:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#bottomCopyright {
+	width: 980px;
+	height: 100px;
+	background-color: #1575BD;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/bgMainBottom01.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	color: #fff;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 200%;
+	bottom: 0px;
+}
+
+#mainContentPos2 {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #D8D8D8;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+#mainContent2 {
+	width: 970px;
+	background-color: #fff;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ContentShowBox {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.noticeBox {
+	width: 900px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 200%;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+#ContentShowBox table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	border: 0px solid #AFAFAF;
+}
+
+#ContentShowBox td {
+	font-size: 12px;
+	border-bottom: 0px dashed #AFAFAF;
+	padding: 3px;
+	line-height: 200%;
+}
+
+.inputBoxWidth {
+	width: 380px;
+	margin-bottom: 2px;
+}
+
+td.dashline {
+	border-bottom: 1px solid #afafaf;
+}
+
+/*整体版式样式结束*/
+#logoWord {
+	float: left;
+	width: 391px;
+	height: 54px;
+	color: #fff;
+	border: 0px solid #f00;
+	text-align: left;
+	overflow: hidden;
+	padding: 0px;
+	float: left;
+	margin-left: 85px !important;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#logoChn {
+	width: 395px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#logoEng {
+	width: 395px;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#topRightTop,#topRightBottom {
+	width: 500px;
+	height: 26px;
+	border: 0px solid #0f0;
+	text-align: right;
+	float: right;
+	font-size: 12px;
+	color: #fff;
+	margin-top: 22px;
+	overflow: hidden;
+}
+
+#topRightBottom {
+	padding: 0px;
+	margin: 0px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#topClockBox {
+	width: 320px !important;
+	width: 340px;
+	height: 26px;
+	float: right;
+	text-align: left;
+	border: 0px solid #f00;
+}
+
+#systemDoor {
+	float: right;
+	width: 121px;
+	height: 26px;
+	border: 0px solid #0f0;
+	text-align: center;
+}
+
+#userNameBox {
+	float: right;
+	height: 26px;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #225C9F;
+	border: 0px solid #ff0;
+	overflow: hidden;
+}
+
+#userNameBox2 {
+	float: right;
+	height: 26px;
+	background-color: #225C9F;
+}
+
+#systemDoor a:link,#systemDoor a:visited,#systemDoor a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#systemDoor a:hover {
+	color: #FFD800;
+}
+
+.topTextPos {
+	display: block;
+	margin-top: 5px;
+	margin-right: 10px;
+	border: 0px solid #f00;
+}
+
+.topimgpos {
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 5px;
+	float: left;
+}
+
+/*右上角样式结束*/
+
+/*导航部分样式开始*/
+#navIconBox,#navWordBox {
+	width: 900px;
+	margin-left: 40px !important;
+	margin-left: 20px;
+	text-align: left;
+	height: 44px;
+	float: left;
+	overflow: hidden;
+	border: 0px solid #f00;
+}
+
+#navWordBox {
+	height: 27px;
+}
+
+#navWordBox a:link,#navWordBox a:visited,#navWordBox a:hover {
+	display: block;
+	width: 82px;
+	height: 27px;
+	text-align: center;
+	color: #454545;
+	float: left;
+	font-size: 14px;
+	text-decoration: none;
+	margin-top: 0px;
+	padding-top: 3px;
+}
+
+#navWordBox a:hover {
+	color: #064B80;
+	background-image: url(../images/bgMainNav03.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	color: #FFD800;
+}
+
+#navWordBox a#current:link,#navWordBox a#current:visited,#navWordBox a#current:hover
+	{
+	background-color: #0795DF;
+	color: #fff;
+	background-image: url(../../img/comm/bgMainNav02.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+.iconPos {
+	width: 82px;
+	height: 44px;
+	float: left;
+}
+
+/*猪腰内容样式*/
+.mainContentFrame {
+	width: 970px;
+	font-size: 8px;
+	height: 12px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*首页样式*/
+#WelcomeWordBox {
+	width: 900px;
+	font-size: 14px;
+	line-height: 200%;
+	text-indent: 2em;
+	text-align: left;
+	padding-top: 12px;
+}
+
+#WelcomeWordBox p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#WelcomeWordBox a:link,#WelcomeWordBox a:visited,#WelcomeWordBox a:hover
+	{
+	color: #00A8FF;
+}
+
+#WelcomeWordBox a:hover {
+	color: #233994;
+}
+
+.indexWordBox {
+	width: 700px;
+	float: right;
+}
+
+.indexWordBox ul {
+	margin-top: 5px;
+	list-style: none;
+	width: 650px;
+}
+
+.indexWordBox li {
+	width: 650px;
+	float: left;
+	font-size: 12px;
+	line-height: 200%;
+}
+
+.indexPicBox {
+	width: 150px;
+	float: left;
+}
+
+.indexWordBox td {
+	font-size: 14px;
+	color: #383838;
+	line-height: 200%;
+	height: 50px;
+	border-bottom: 1px dashed #D8D8D8;
+	text-indent: 0em;
+}
+
+/*底部样式*/
+#bottomCopyright a:link,#bottomCopyright a:visited,#bottomCopyright a:hover
+	{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#bottomCopyright a:hover {
+	color: #FFC600;
+}
+
+#bottom-top {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	color: #fff;
+	line-height: 150%;
+	text-align: center;
+}
+
+#bottom-bottom {
+	width: 900px;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+/*超链接通用样式*/
+a:link,a:visited,a:hover {
+	text-decoration: none;
+	color: #0045d2;
+}
+
+a:hover {
+	color: #000;
+}
+
+/*出错提示信息样式*/
+#commonAlarmBox {
+	width: 600px;
+	height: 300px;
+	border: 0px solid #f00;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 200%;
+	background-image: url(../../img/comm/alarmbk.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+#alarmbox {
+	width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px solid #f00;
+	margin-top: 0px;
+}
+
+#alarmLeftPic {
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 150px;
+	height: 200px;
+	border: 0px solid #f00;
+}
+
+#alarmRightWord,#alarmRightWord2 {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 320px;
+	height: 200px;
+	border: 0px solid #00f;
+	text-align: left;
+	font-size: 14px;
+	border: 0px solid #f00;
+}
+
+#alarmRightWord2 {
+	width: 280px;
+	height: 100px;
+	margin-left: 0px;
+	line-height: 200%;
+	color: #e10000;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.alarmTitleWord {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 200%;
+	color: #ff5a00;
+	display: block;
+	margin-bottom: 15px;
+}
+
+/*index6专用样式*/
+#style_index6 {
+	width: 650px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px solid #f00;
+	background-image: url(../../img/comm/bgIndex6.gif);
+	background-repeat: no-repeat;
+	background-postion: top left;
+	text-align: center;
+}
+
+#index6-userbox {
+	width: 600px;
+	margin-top: 7px;
+	font-size: 12px;
+	border: 0px solid #00f;
+	text-align: left;
+	line-height: 150%;
+	float: left;
+	margin-left: 25px;
+}
+
+#index6-logoword {
+	float: left;
+	width: 550px;
+	height: 40px;
+	color: #fff;
+	border: 0px solid #f00;
+	text-align: left;
+	overflow: hidden;
+	padding: 0px;
+	color: #000;
+	margin-left: 75px !important;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#index6content {
+	margin-top: 20px;
+	width: 560px;
+	border: 0px solid #f00;
+	float: left;
+	margin-left: 25px;
+}
+
+/*帮助及用户须知部分样式*/
+.helptitle {
+	width: 650px;
+	height: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	background-color: #cceaff;
+	color: #035891;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}

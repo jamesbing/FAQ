@@ -1,0 +1,10 @@
+
+small, .small { color: #999; }
+
+/* Small text ---*/
+small, .small, .smalldark, .createby, .createdate, .modifydate, .img_caption, .contenttoc,
+p.site-slogan, a.readon, .ja-navhelper, #ja-footer { font-size: 11px; }
+
+
+.ja-copyright { float: right; text-align: center; width: 980px; }
+

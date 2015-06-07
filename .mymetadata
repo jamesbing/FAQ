@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="FAQ"
+  id="myeclipse.1387939449377"
+  context-root="/FAQ"
+  j2ee-spec="6.0"
+  archive="FAQ.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

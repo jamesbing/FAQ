@@ -1,0 +1,369 @@
+/*各页面共用样式*/
+
+a.view:link,a.view:visited,a.view:hover{
+text-decoration:none;
+width:30px;
+height:20px;
+color:#323232;
+border:1px solid #ABABAB;
+background-color:#fff;
+margin-left:2px;
+background-image:url(../../img/comm/bgSmallbtn.gif);
+background-repeat:repeat-x;
+background-position:top;
+padding:2px 5px;
+white-space:nowrap;
+}
+
+a.view:hover{
+background-color:#F6D947;
+background-image:url(../../img/comm/bgSmallbtn2.gif);
+}
+
+.bg1{
+background-color:#FFE488;
+}
+
+.bg2{
+background-color:#D7F1FF;
+}
+
+.bg3{
+background-color:#DFDFDF;
+height:30px;
+}
+
+.bg4{
+background-color:#fff;
+}
+
+/*按钮及按钮式样超链接样式*/
+
+.bigBtn{
+height:25px;
+font-size:14px;
+background-color:#F6D544;
+border:1px solid #B28D1B;
+background-image:url(../../img/comm/bgbigbtn.gif);
+background-repeat:repeat-x;
+background-position:top;
+color:#342700;
+padding-left:5px;
+padding-right:5px;
+}
+
+.bigBtna:link,.bigBtn a:visited,.bigBtn a:hover{
+text-decoration:none;
+}
+
+.bigBtn a:hover{
+color:#000;
+}
+
+
+/*各种提交及反馈表格样式*/
+
+table{
+width:100%;
+}
+
+td{
+font-size:12px;
+line-height:150%;
+font-family:Verdana,瀹嬩綋;
+border-bottom:1px dashed #AFAFAF;
+padding:3px;
+text-align:left;
+}
+
+.tablePos table{
+width:100%;
+margin-left:auto;
+margin-right:auto;
+margin-top:5px;
+border:0px solid #AFAFAF;
+}
+
+.tablePos th{
+font-size:12px;
+border-bottom:1px dashed #AFAFAF;
+padding:3px;
+text-align:center;
+background-color:#1e8ed5;
+color:#fff;
+height:25px;
+background-image:url(../../img/comm/bgThcolor.gif);
+background-repeat:repeat-x;
+background-position:top;
+}
+
+.tablePos td{
+font-size:12px;
+border-bottom:1px dashed #AFAFAF;
+padding:3px;
+line-height:150%;
+text-align:center;
+}
+
+.tablePos td.tdLeftPos{
+text-align:left;
+}
+
+.tdbg1{
+width:130px;
+background-color:#1e8ed5;
+color:#fff;
+text-align:right;
+border:0px dashed #afafaf;
+font-weight:bold;
+white-space:nowrap;
+}
+
+.tdbg2{
+background-color:#ededed;
+color:#000;
+text-align:left;
+border-bottom:1px dashed #afafaf;
+}
+
+#legendBox{
+float:left;
+text-align:left;
+font-size:12px;
+line-height:200%;
+margin-top:8px;
+}
+
+/*录入表单样式*/
+
+table.inputTableStyle{
+margin-top:2px;
+border:1px solid #f00;
+}
+
+.redWord{
+color:#e00000;
+}
+
+/*底部翻页部分样式*/
+
+.controlBox{
+float:right;
+border:0px solid #00f;
+text-align:right;
+font-size:12px;
+color:#7B7E80;
+margin-top:5px;
+}
+
+.controlBox a:link,.controlBox a:visited,.controlBox a:hover,.controlnone,.pageNow{
+padding:1px 5px;
+margin-left:2px;
+margin-right:2px;
+display:block;
+text-decoration:none;
+float:left;
+border:1px solid #ABABAB;
+background-color:#fff;
+color:#323232;
+background-image:url(../../img/comm/bgSmallbtn.gif);
+background-repeat:repeat-x;
+background-position:top;
+height:15px;
+overflow-y:hidden;
+}
+
+.controlBox a:hover{
+background-color:#0050C8;
+background-image:url(../../img/comm/bgSmallbtn2.gif);
+}
+
+.pageNow{
+background-color:#0050C8;
+color:#fff;
+border:1px solid #ABABAB;
+background-image:url(../../img/comm/bgSmallbtn3.gif);
+background-repeat:repeat-x;
+background-position:top;
+}
+
+.controlRightPos{
+float:right;
+border:0px solid #f00;
+}
+
+.controlnone{
+color:#787878;
+}
+
+.pagesNum{
+float:right;
+border:1px solid #f00;
+}
+
+/*图例说明区域样式*/
+
+#legendAreaBox{
+width:100%;
+float:left;
+border:0px solid #f00;
+font-size:12px;
+color:#595959;
+margin-top:5px;
+line-height:150%;
+text-align:left;
+}
+
+/*按钮样式*/
+
+.btnstyle{
+height:21px;
+border:1px solid #b77a24;
+background-color:#ff9600;
+color:#000;
+background-image:url(../../img/comm/bgbtn.gif);
+background-repeat:repeat-x;
+background-position:top;
+}
+
+/*导航路径样式*/
+
+#breadroadbox{
+width:940px;
+height:20px;
+border-bottom:1px dashed #afafaf;
+margin-bottom:8px;
+margin-left:auto;
+margin-right:auto;
+text-align:left;
+font-size:12px;
+color:#535353;
+}
+
+/*弹出窗口表格样式*/
+
+#popWindow{
+width:98%;
+font-size:12px;
+line-height:150%;
+}
+
+#popWindow table{
+background-color:#afafaf;
+}
+
+.itembk{
+background-color:#0B6ED4;
+color:#fff;
+}
+
+.itemShow{
+background-color:#fff;
+}
+
+.itemShow2{
+background-color:#E3F4FD;
+}
+
+/*表格上部美化图片样式*/
+
+#timelagPicBox{
+width:900px;
+height:50px;
+border:0px solid #f00;
+margin-left:auto;
+margin-right:auto;
+background-image:url(../../img/comm/tabletop.gif);
+background-repeat:no-repeat;
+background-position:top right;
+text-align:left;
+font-size:14px;
+font-weight:bold;
+color:#0058B2;
+}
+
+#timelagPicBoxWord{
+margin-top:15px;
+display:block;
+width:300px;
+float:left;
+margin-left:15px;
+}
+
+.writeback{
+width:100%;
+margin-left:auto;
+margin-right:auto;
+background-color:#91C7E6;
+margin-bottom:5px;
+}
+
+.blankBox{
+height:1px solid #fff;
+overflow:hidden;
+}
+
+/*整理和查看页面的答复记录可出现滚动条的层*/
+
+.viewScrollingbox{
+width:755px;
+height:255px;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.putingscrolling{
+width:750px;
+height:70px;
+overflow-x:hidden;
+overflow-y:auto;
+border:1px solid #fff;
+}
+
+/*道歉信息提示*/
+
+#sorryInfor{
+width:400px;
+margin-top:15px;
+margin-bottom:15px;
+font-size:16px;
+color:#0387db;
+border:0px solid #f00;
+text-align:left;
+line-height:200%;
+margin-left:auto;
+margin-right:auto;
+}
+
+#sorryInfor img{
+float:left;
+}
+
+#sorryText{
+width:250px;
+margin-top:25px;
+float:left;
+margin-left:10px;
+border:0px solid #f00;
+}
+
+/*左右交换内容按钮样式*/
+
+.convertBtnStyle,.convertBtnStyle2{
+width:75px;
+height:25px;
+border:0px solid #f00;
+background-image:url(../../img/comm/convertbk.gif);
+background-repeat:no-repeat;
+background-position:bottom left;
+background-color:#ededed;
+text-align:right;
+padding-right:5px;
+padding-top:4px;
+cursor:pointer;
+margin-bottom:2px;
+}
+
+.convertBtnStyle2{
+background-image:url(../../img/comm/convertbk2.gif);
+}

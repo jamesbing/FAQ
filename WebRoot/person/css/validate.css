@@ -1,0 +1,12 @@
+em.error {
+	background:url("img-wrong.gif") no-repeat 0px 0px;
+	padding-left:16px;
+	font:"ËÎÌו";
+	font-size:12px;
+	color:#FF0000;
+	font-style:normal;
+}
+em.success {
+	background:url("img-right.gif") no-repeat 0px 0px;
+	padding-left:16px;	
+}

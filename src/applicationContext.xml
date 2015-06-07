@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://127.0.0.1:3306/dbfaq?characterEncoding=UTF-8">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value=""></property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="annotatedClasses">
+			<list>
+				<value>cn.kuroko.faq.bean.Person</value>
+				<value>cn.kuroko.faq.bean.Question</value>
+				<value>cn.kuroko.faq.bean.Reply</value>
+				<value>cn.kuroko.faq.bean.Type</value>
+				<value>cn.kuroko.faq.bean.ExpertType</value>
+				<value>cn.kuroko.faq.bean.Admset</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTransactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="hibernateTransactionAttributeSource"
+		class="org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource">
+		<property name="properties">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="dao" class="cn.kuroko.faq.dao.impl.DaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="personService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="hibernateTransactionManager"></property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.service.impl.PersonServiceImpl">
+				<property name="dao" ref="dao"></property>
+			</bean>
+		</property>
+		<property name="transactionAttributeSource" ref="hibernateTransactionAttributeSource"></property>
+	</bean>
+
+	<bean id="questionService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="hibernateTransactionManager"></property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.service.impl.QuestionServiceImpl">
+				<property name="dao" ref="dao"></property>
+			</bean>
+		</property>
+		<property name="transactionAttributeSource" ref="hibernateTransactionAttributeSource"></property>
+	</bean>
+
+	<bean id="replyService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="hibernateTransactionManager"></property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.service.impl.ReplyServiceImpl">
+				<property name="dao" ref="dao"></property>
+			</bean>
+		</property>
+		<property name="transactionAttributeSource" ref="hibernateTransactionAttributeSource"></property>
+	</bean>
+	
+	<bean id="expertTypeService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="hibernateTransactionManager"></property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.service.impl.ExpertTypeServiceImpl">
+				<property name="dao" ref="dao"></property>
+			</bean>
+		</property>
+		<property name="transactionAttributeSource" ref="hibernateTransactionAttributeSource"></property>
+	</bean>
+	
+	<bean id="typeService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="hibernateTransactionManager"></property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.service.impl.TypeServiceImpl">
+				<property name="dao" ref="dao"></property>
+			</bean>
+		</property>
+		<property name="transactionAttributeSource" ref="hibernateTransactionAttributeSource"></property>
+	</bean>
+
+	<bean id="loginInterceptor" class="cn.kuroko.faq.struts.interceptor.LoginInterceptor"></bean>
+
+	<bean name="/person" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="interceptorNames">
+			<list>
+				<value>loginInterceptor</value>
+			</list>
+		</property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.struts.action.PersonAction">
+				<property name="personService" ref="personService"></property>
+				<property name="questionService" ref="questionService"></property>
+				<property name="expertTypeService" ref="expertTypeService"></property>
+				<property name="typeService" ref="typeService"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean name="/question" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="interceptorNames">
+			<list>
+				<value>loginInterceptor</value>
+			</list>
+		</property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.struts.action.QuestionAction">
+				<property name="personService" ref="personService"></property>
+				<property name="questionService" ref="questionService"></property>
+				<property name="replyService" ref="replyService"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean name="/reply" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="interceptorNames">
+			<list>
+				<value>loginInterceptor</value>
+			</list>
+		</property>
+		<property name="target">
+			<bean class="cn.kuroko.faq.struts.action.ReplyAction">
+				<property name="personService" ref="personService"></property>
+				<property name="questionService" ref="questionService"></property>
+				<property name="replyService" ref="replyService"></property>
+			</bean>
+		</property>
+	</bean>
+</beans>

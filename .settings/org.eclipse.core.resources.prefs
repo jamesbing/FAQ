@@ -1,0 +1,11 @@
+#Fri May 23 11:12:37 CST 2014
+eclipse.preferences.version=1
+encoding//WebRoot/css/commCss_01.css=UTF-8
+encoding//WebRoot/exception.jsp=UTF-8
+encoding//WebRoot/person/login.jsp=UTF-8
+encoding//WebRoot/person/success.jsp=UTF-8
+encoding//WebRoot/question/addQuestion.jsp=UTF-8
+encoding//WebRoot/question/listQuestion.jsp=UTF-8
+encoding//src/cn/kuroko/faq/util/mail/MailSenderInfo.java=UTF-8
+encoding/<project>=UTF-8
+separateDerivedEncodings=true

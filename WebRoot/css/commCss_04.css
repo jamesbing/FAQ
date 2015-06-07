@@ -1,0 +1,56 @@
+#mainContentPos2{
+width:980px;
+margin-left:auto;
+margin-right:auto;
+background-color:#D8D8D8;
+text-align:center;
+padding-top:8px;
+padding-bottom:10px;
+}
+
+#mainContent2{
+width:970px;
+background-color:#fff;
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+#ContentShowBox{
+width:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.noticeBox{
+width:900px;
+text-align:left;
+font-size:14px;
+line-height:200%;
+border-bottom:1px solid #E6E6E6;
+}
+
+
+#ContentShowBox table{
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+border:0px solid #AFAFAF;
+}
+
+#ContentShowBox td{
+font-size:12px;
+border-bottom:0px dashed #AFAFAF;
+padding:3px;
+line-height:200%;
+}
+
+.inputBoxWidth{
+width:380px;
+margin-bottom:2px;
+}
+
+td.dashline{
+border-bottom:1px solid #afafaf;
+}
